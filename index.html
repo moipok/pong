@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Backbone Router</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="haha", class="nav-header">Menu</li>
+                        <li><a href="#game_page">Game</a></li>
+                        <li><a href="#first">Guilds</a></li>
+                        <li><a href="#third">About me</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="span9 pages">
+                <div id="page-first" class="hero-unit">
+                    <h1>Hello, player!</h1>
+                    <h3>Guilds: <span class="Guilds"></span></h3>
+                    <p>This is a template for a simple marketing or informational website. It includes
+                        a large callout called the hero unit and three supporting pieces of content.
+                        Use it as a starting point to create something more unique.</p>
+                    <form class="form-inline">
+                        <input id="query" type="text" placeholder="query">
+                        <select id="Guilds" >
+                            <option>cars</option>
+                            <option>news</option>
+                            <option>rockets</option>
+                        </select>
+                        <a id="search" href="#" class="btn btn-primary btn-large">search »</a>
+                    </form>
+                </div>
+                <div id="page-game_page" class="hero-unit hide">
+                    <h1>Hello, player!</h1>
+                    <br></br>
+                    <canvas id = "canvas" width="600" height="400"></canvas>
+                    <button class="start">start</button>
+                    <script src="js1/game.js"></script>
+                </div>
+                <div id="page-third" class="hero-unit hide">
+                    <h1>About me!</h1>
+                    <br> </br>
+                    <p>Username: + $(#username) <input username="ip"> <input type="submit" value="Отправить"></p>
+                    <p>Login: + подтянуть </p>
+                    <p>Mail: + подтянуть </p>
+                    <p>Score: + подтянуть </p>
+                    <p>Guild: + подтянуть </p>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/underscore.js"></script>
+<script src="js/backbone.js"></script>
+<script src="main.js"></script>
+<script src="router.js"></script>
+</html>
